@@ -1,3 +1,4 @@
+@import "../../Colors.scss";
 .Home_Page {
   position: relative;
 }
@@ -9,8 +10,7 @@
 
 .Home_btn {
   text-transform: capitalize;
-  background: rgba(255, 124, 37, 0.8235294118);
-  color: black;
+  color: $Black;
   padding: 1rem 1.5rem;
   letter-spacing: 2px;
   display: inline-block;
@@ -19,12 +19,12 @@
   border: none;
   cursor: pointer;
   margin: auto;
-  background-color: #a5cf39dc;
+  background-color: $Base-color-light;
 }
 .Home_Svg {
   padding: 1rem;
-  color: #a5cf39;
-  background-color: black;
+  color: $Base-color;
+  background-color: $Black;
   display: flex;
 }
 .Home_Svg svg {
@@ -37,7 +37,7 @@
 }
 
 .Home_svg_btn:hover {
-  color: #a5cf39;
+  color: $Base-color;
 }
 
 .Home_Wrapper {
@@ -47,7 +47,7 @@
   position: absolute;
 }
 .Home_btn:hover {
-  background-color: #a5cf39;
+  background-color: $Base-color;
 }
 @media screen and (min-width: 469px) and (max-width: 1199px) {
   .Home_Svg {

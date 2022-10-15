@@ -1,6 +1,7 @@
+@import "../../Colors.scss";
 .S_Container {
   height: auto;
-  background-color: #f7f7f7;
+  background-color: $background-offWhite;
 }
 .S_Wrapper {
   padding: 4rem 0rem;
@@ -32,7 +33,7 @@
     font-size: 1rem;
     line-height: 140%;
     letter-spacing: 0.12em;
-    color: #000000;
+    color: $Black;
   }
 
   > h3 {
@@ -43,11 +44,11 @@
     font-weight: 600;
     font-size: 2rem;
     line-height: 44px;
-    color: #000000;
+    color: $Black;
   }
 
   .S_Green {
-    color: #a4cf39;
+    color: $Base-color;
   }
 
   > p {
@@ -78,12 +79,12 @@
     height: fit-content;
     align-items: center;
     justify-content: flex-start;
-    border: 1px solid #a4cf39;
+    border: 1px solid $Base-color;
   }
 
   .values_icon {
     height: 100%;
-    background: #a4cf39;
+    background: $Base-color;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -104,7 +105,7 @@
       font-weight: 600;
       font-size: 1rem;
       line-height: 1rem;
-      color: #000000;
+      color: $Black;
       margin: 0;
       padding-left: 1em;
     }
@@ -175,7 +176,7 @@
 }
 
 .S_Top {
-  color: #000015;
+  color: $Black-light;
   display: flex;
   justify-content: center;
   align-content: center;
@@ -192,7 +193,7 @@
 }
 .S_Wrapper_Text {
   text-align: center;
-  color: #000015;
+  color: $Black-light;
   font-weight: 300;
   margin: auto;
   width: 60%;
@@ -203,13 +204,13 @@
   border-style: none;
   height: 24px;
   outline: none;
-  background-color: rgba(0, 0, 0, 0);
+  background-color: $Black;
 }
 .S_Right_Button {
   border-style: none;
   height: 24px;
   outline: none;
-  background-color: rgba(0, 0, 0, 0);
+  background-color: $Black;
 }
 @media screen and (min-width: 769px) and (max-width: 1199px) {
   .S_Wrapper {
