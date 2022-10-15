@@ -1,0 +1,146 @@
+._404_container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: auto;
+    overflow: hidden;
+    background-color: #f5f5f5;
+}
+
+._404_bgLeft {
+    height: 643px;
+    width: 550px;
+    border-radius: 0px;
+    background-image: url("../../assets/images/Electric Circuit BG DesignLeft_404Desktop.png");
+}
+
+._404_bgRight {
+    height: 643px;
+    width: 550px;
+    border-radius: 0px;
+    background-image: url("../../assets/images/Electric Circuit BG DesignRight_404Desktop.png");
+}
+
+._404_wrapper {
+    display: flex;
+    z-index: 1;
+    flex-direction: column;
+    align-content: center;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 0;
+
+    ._404_title {
+        height: 244px;
+        width: 424px;
+
+        > h1 {
+
+            font-family: Montserrat;
+            font-size: 12.5rem;
+            font-weight: 900;
+            line-height: 244px;
+            letter-spacing: 0em;
+            text-align: center;
+            color: #A4CF3966;
+        }
+    }
+
+    ._404_text {
+        display: flex;
+        height: 44px;
+        width: 589px;
+
+        > p {
+            font-family: Montserrat;
+            font-size: 1rem;
+            font-weight: 400;
+            line-height: 22px;
+            letter-spacing: 0em;
+            text-align: center;
+            color: rgba(0, 0, 0, 0.75);
+        }
+    }
+    
+    ._404_btn {
+        text-transform: capitalize;
+        background: rgba(255, 124, 37, 0.8235294118);
+        color: black;
+        padding: 1rem 1.5rem;
+        letter-spacing: 2px;
+        display: inline-block;
+        font-weight: 700;
+        font-size: 1.1rem;
+        border: none;
+        cursor: pointer;
+        margin: auto;
+        background-color: #a5cf39dc;
+    }
+
+    ._404_SVG {
+        padding: 1rem;
+        color: #a5cf39;
+        background-color: black;
+        display: flex;
+    }
+    ._404_SVG svg {
+        align-self: center;
+        font-size: 20px;
+    }
+    ._404_btn_Wrapper {
+        bottom: 5vh;
+        display: flex;
+        left: 40vw;
+        position: absolute;
+    }
+    ._404_btn:hover {
+        background-color: #a5cf39;
+    }
+
+    ._404_svg_btn {
+        cursor: pointer;
+    }
+
+    ._404_svg_btn:hover {
+        color: #a5cf39;
+    }
+}
+
+
+@media screen and (min-width: 769px) and (max-width: 1199px) {
+  
+}
+
+@media screen and (max-width: 768px) {
+    ._404_container {
+        display: block;
+    }
+    ._404_wrapper {
+        display: block;
+        z-index: 0;
+        margin: 2rem 0;
+
+        ._404_title {
+            display: inline;
+
+            > h1 {
+                padding: 1rem;
+                font-size: 8rem;
+            }
+        }
+    
+        ._404_btn_Wrapper {
+            position: inherit;
+        }
+        ._404_text {
+            display: inline;
+
+            > p {
+                font-size: 1rem;
+                padding: 1rem;
+            }
+        }
+    }
+    
+
+}

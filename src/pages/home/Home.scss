@@ -1,0 +1,79 @@
+.Home_Page {
+  position: relative;
+}
+.hero_image {
+  position: relative;
+  object-fit: contain;
+  width: -webkit-fill-available;
+}
+
+.Home_btn {
+  text-transform: capitalize;
+  background: rgba(255, 124, 37, 0.8235294118);
+  color: black;
+  padding: 1rem 1.5rem;
+  letter-spacing: 2px;
+  display: inline-block;
+  font-weight: 700;
+  font-size: 1.1rem;
+  border: none;
+  cursor: pointer;
+  margin: auto;
+  background-color: #a5cf39dc;
+}
+.Home_Svg {
+  padding: 1rem;
+  color: #a5cf39;
+  background-color: black;
+  display: flex;
+}
+.Home_Svg svg {
+  align-self: center;
+  font-size: 20px;
+}
+
+.Home_svg_btn {
+  cursor: pointer;
+}
+
+.Home_svg_btn:hover {
+  color: #a5cf39;
+}
+
+.Home_Wrapper {
+  bottom: 5vh;
+  display: flex;
+  left: 40vw;
+  position: absolute;
+}
+.Home_btn:hover {
+  background-color: #a5cf39;
+}
+@media screen and (min-width: 469px) and (max-width: 1199px) {
+  .Home_Svg {
+    display: none;
+  }
+  .Home_btn {
+    font-size: 0.9rem;
+    padding: 0.75rem 1rem;
+  }
+  .Home_Wrapper {
+    bottom: 3vh;
+  }
+}
+@media screen and (max-width: 468px) {
+  .Home_Page {
+    position: relative;
+  }
+  .Home_Wrapper {
+    position: absolute;
+    bottom: 2vh;
+    left: 25vw;
+  }
+  .Home_Svg svg {
+    font-size: 1rem;
+  }
+  .Home_btn {
+    font-size: 0.85rem;
+  }
+}
