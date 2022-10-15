@@ -1,3 +1,4 @@
+@import "../../Colors.scss";
 .nav__component {
   position: fixed;
   display: flex;
@@ -8,7 +9,7 @@
   justify-content: space-between;
   padding: 20px;
   align-items: center;
-  background-color: #a5cf39;
+  background-color: $Base-color;
   box-shadow: 0 1px 0 rgb(0 0 0 / 10%);
   font-weight: 500;
   line-height: 23px;
@@ -43,12 +44,12 @@
   font-weight: bold;
 }
 .Contact-Link {
-  border: 1px solid black;
+  border: 1px solid $Black;
   padding: 7px 13px;
 }
 
 a:hover {
-  color: black;
+  color: $Black;
 }
 
 @media screen and (max-width: 768px) {

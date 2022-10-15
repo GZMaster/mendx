@@ -1,12 +1,12 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
-
+@import "../../Colors.scss";
 .hamburger_button {
   z-index: 10;
   margin-left: 10px;
 }
 
 .panel {
-  background-color: #a5cf39;
+  background-color: $Base-color;
   background-size: 117px 188px;
   transition: all 0.4s cubic-bezier(0.42, 0, 0.34, 1.01);
   position: fixed;

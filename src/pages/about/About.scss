@@ -1,6 +1,7 @@
+@import "../../Colors.scss";
 .A_Container {
   height: auto;
-  background-color: #f7f7f7;
+  background-color: $background-offWhite;
 }
 .A_Wrapper {
   padding: 4rem 0rem;
@@ -37,16 +38,16 @@
   border: 2px solid #00000063;
   background-color: transparent;
   padding: 0.5rem 2rem;
-  color: black;
+  color: $Black;
   font-weight: 500;
   font-size: 16px;
   width: fit-content;
   text-decoration: none;
 }
 .A_Btn:hover {
-  color: white;
+  color: $White;
   transition: all 0.3s linear;
-  background-color: #a5cf39;
+  background-color: $Base-color;
 }
 .A_Image {
   width: 70%;
@@ -55,7 +56,7 @@
 }
 
 .A_Text_Title {
-  color: #000015;
+  color: $Black-light;
   line-height: 23.48px;
   font-size: 20px;
   font-weight: 300;
@@ -64,7 +65,7 @@
 }
 
 .A_Green {
-  color: #a4cf39;
+  color: $Base-color;
 }
 .A_Text_Wrap p {
   text-align: justify;
