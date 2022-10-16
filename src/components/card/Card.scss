@@ -1,0 +1,84 @@
+@import "../../Colors.scss";
+.Card_Wrapper {
+  display: inline-flex;
+  margin-left: 1rem;
+  margin-right: 5rem;
+  padding: 4rem 0rem;
+  justify-content: space-between;
+  gap: 20px;
+  align-items: baseline;
+
+  .Card {
+    width: 45%;
+    margin-bottom: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-items: center;
+    justify-content: center;
+    font-size: 1rem;
+    border: 1px solid $Base-color;
+    color: #000015cc;
+    background-color: $White;
+    min-width: 265px;
+
+    .Card_Image {
+      width: 100%;
+
+      > img {
+        width: 100%;
+        object-fit: fill;
+      }
+    }
+
+    .Card_Details {
+      width: 100%;
+      padding: 0 0.3rem;
+      text-align: center;
+
+      > h6 {
+        font-weight: 500;
+        text-transform: capitalize;
+        color: $Black-light;
+        font-size: 1.2em;
+        margin: 0;
+      }
+
+      > p {
+        font-size: 0.8em;
+        line-height: 20px;
+      }
+    }
+  }
+  .Card:hover {
+    transform: scale(1.05);
+    transition: all 0.5s linear;
+    z-index: 1;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  }
+}
+
+@media screen and (min-width: 769px) and (max-width: 1199px) {
+  .Card_Wrapper {
+    padding: 2rem 0;
+  }
+  .Card {
+    width: 19%;
+  }
+  .Card p {
+    text-align: center;
+  }
+  .Card h6 {
+    font-size: 1rem;
+  }
+}
+@media screen and (max-width: 768px) {
+  .Card {
+    width: 100%;
+    flex: auto;
+    margin-bottom: 20px;
+  }
+  .Card p {
+    text-align: center;
+  }
+}

@@ -1,0 +1,51 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+@import "../../Colors.scss";
+.hamburger_button {
+  z-index: 10;
+  margin-left: 10px;
+}
+
+.panel {
+  background-color: $Base-color;
+  background-size: 117px 188px;
+  transition: all 0.4s cubic-bezier(0.42, 0, 0.34, 1.01);
+  position: fixed;
+  z-index: -1;
+  right: -100%;
+  top: 60px;
+  height: fit-content;
+  visibility: hidden;
+  opacity: 0;
+  display: flex;
+
+  &.open {
+    visibility: visible;
+    width: 100%;
+    right: 0;
+    opacity: 1;
+  }
+}
+
+.panel ul {
+  width: 100%;
+  padding: 1rem;
+
+  li {
+    list-style: none;
+    font-size: 1.4rem;
+    text-align: center;
+
+    & + li {
+      margin-top: 1rem;
+    }
+
+    a {
+      text-decoration: none;
+      color: rgb(255, 255, 255);
+
+      &:hover {
+        color: #f96507;
+      }
+    }
+  }
+}
