@@ -1,0 +1,63 @@
+@import "../../Colors.scss";
+.nav__component {
+  position: fixed;
+  display: flex;
+  width: -webkit-fill-available;
+  z-index: 5;
+  top: 0%;
+  height: 30px;
+  justify-content: space-between;
+  padding: 20px;
+  align-items: center;
+  background-color: $Base-color;
+  box-shadow: 0 1px 0 rgb(0 0 0 / 10%);
+  font-weight: 500;
+  line-height: 23px;
+  font-family: "Montserrat";
+}
+
+.nav__header {
+  display: flex;
+  align-items: center;
+  width: 20%;
+  margin-left: 3%;
+}
+
+.logo {
+  width: 20%;
+}
+
+.links__content {
+  margin-right: 2%;
+}
+
+.links {
+  text-decoration: none;
+  width: 80%;
+  padding: 10px;
+  margin-right: 20px;
+  color: rgba(0, 0, 0, 0.6);
+  cursor: pointer;
+}
+
+.selected {
+  font-weight: bold;
+}
+.Contact-Link {
+  border: 1px solid $Black;
+  padding: 7px 13px;
+}
+
+a:hover {
+  color: $Black;
+}
+
+@media screen and (max-width: 768px) {
+  .logo {
+    width: 50%;
+  }
+  .nav__component {
+    width: 100%;
+    width: -webkit-fill-available;
+  }
+}

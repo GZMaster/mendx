@@ -1,0 +1,270 @@
+@import "../../Colors.scss";
+.S_Container {
+  height: auto;
+  background-color: $background-offWhite;
+}
+.S_Wrapper {
+  padding: 4rem 0rem;
+  padding-top: 0;
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  justify-content: space-evenly;
+  margin: 0px 120px;
+}
+.S_Left {
+  // flex: 1 1;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  justify-content: flex-start;
+}
+
+.S_title {
+  display: grid;
+  gap: 8px;
+
+  .S_textHeader {
+    margin: 0;
+    padding: 0;
+    font-family: "Montserrat";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1rem;
+    line-height: 140%;
+    letter-spacing: 0.12em;
+    color: $Black;
+  }
+
+  > h3 {
+    margin: 0;
+    padding: 0;
+    font-family: "Montserrat";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 2rem;
+    line-height: 44px;
+    color: $Black;
+  }
+
+  .S_Green {
+    color: $Base-color;
+  }
+
+  > p {
+    margin: 0;
+    padding: 2rem 0rem;
+    font-family: "Montserrat";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1rem;
+    line-height: 140%;
+    color: rgba(0, 0, 0, 0.75);
+  }
+}
+
+.s_values {
+  display: grid;
+  gap: 10px;
+  margin: 0;
+  padding: 2rem 0rem;
+  padding-left: 2.5rem;
+  background-repeat: no-repeat;
+  background-size: 4px;
+  background-image: url("../../assets/images/Electric Circuitvalues.png");
+  background-position: left;
+
+  > div {
+    display: flex;
+    height: fit-content;
+    align-items: center;
+    justify-content: flex-start;
+    border: 1px solid $Base-color;
+  }
+
+  .values_icon {
+    height: 100%;
+    background: $Base-color;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem;
+
+    > img {
+      width: 34px;
+      height: 34px;
+    }
+  }
+
+  .values_text {
+    height: 100%;
+
+    > h3 {
+      font-family: "Montserrat";
+      font-style: normal;
+      font-weight: 600;
+      font-size: 1rem;
+      line-height: 1rem;
+      color: $Black;
+      margin: 0;
+      padding-left: 1em;
+    }
+
+    > p {
+      font-family: "Montserrat";
+      font-style: normal;
+      font-weight: 500;
+      font-size: 0.8rem;
+      line-height: 1rem;
+      color: rgba(0, 0, 0, 0.7);
+      margin: 0;
+      padding-left: 1em;
+    }
+  }
+}
+
+.S_Right {
+  display: flex;
+  flex-direction: column;
+  width: 40vw;
+  scroll-snap-align: start;
+  overflow-y: hidden;
+}
+
+.servives_holder {
+  display: flex;
+  flex-direction: row;
+  height: 520px;
+  justify-content: center;
+  align-items: center;
+  scroll-snap-align: start;
+}
+
+.services_card {
+  width: 100%;
+  flex-direction: row;
+  overflow: hidden;
+  scroll-snap-type: x mandatory;
+}
+
+.pagination {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 8px;
+  margin-top: 8px;
+}
+.pagination span {
+  display: inline-block;
+  position: relative;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: #cccccc;
+}
+.pagination span.active {
+  background: #00a654;
+}
+.pagination span:before {
+  content: "";
+  position: absolute;
+  top: 3px;
+  left: 3px;
+  right: 3px;
+  bottom: 3px;
+  border-radius: 50%;
+}
+
+.S_Top {
+  color: $Black-light;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  align-self: center;
+  flex-direction: column;
+}
+.S_Top h2 {
+  font-size: 38px;
+  font-weight: 600;
+  line-height: 1.5;
+  align-self: center;
+  margin-bottom: 0;
+  justify-self: center;
+}
+.S_Wrapper_Text {
+  text-align: center;
+  color: $Black-light;
+  font-weight: 300;
+  margin: auto;
+  width: 60%;
+  margin-bottom: 1rem;
+  font-size: 16px;
+}
+.S_Left_Button {
+  border-style: none;
+  height: 24px;
+  outline: none;
+  background-color: $Black;
+}
+.S_Right_Button {
+  border-style: none;
+  height: 24px;
+  outline: none;
+  background-color: $Black;
+}
+@media screen and (min-width: 769px) and (max-width: 1199px) {
+  .S_Wrapper {
+    margin: 0;
+    padding: 2rem 1rem;
+    flex-direction: column;
+  }
+  .S_Top h2 {
+    font-size: 1.5rem;
+    line-height: 32px;
+  }
+  .S_title h3 {
+    font-size: 1.5rem;
+    line-height: 2rem;
+  }
+  .s_values {
+    padding: 2rem 3rem;
+  }
+  .S_Right {
+    width: 100%;
+  }
+  .S_Wrapper_Text {
+    width: 80%;
+    font-size: 1rem;
+    line-height: 22px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .S_Wrapper {
+    margin: 0;
+    padding: 2rem 1rem;
+    flex-direction: column;
+  }
+  .S_Top {
+    flex-direction: column;
+  }
+  .S_Top h2 {
+    font-size: 24px;
+    line-height: 28px;
+  }
+  .S_Wrapper_Text {
+    width: 100%;
+    font-size: 1rem;
+    line-height: 22px;
+  }
+
+  .S_Container {
+    height: fit-content;
+  }
+  .S_Right {
+    width: 100%;
+  }
+  .services_card {
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+  }
+}

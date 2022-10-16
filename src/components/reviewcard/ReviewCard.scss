@@ -1,0 +1,64 @@
+@import "../../Colors.scss";
+.Review_Container {
+  display: flex;
+  // overflow-x: scroll;
+  width: 40vw;
+}
+
+.Review_Wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  // padding: 20px, 30px, 30px, 30px;
+  gap: 20px;
+  width: fit-content;
+  // height: 200px;
+  margin-right: 1rem;
+  padding: 0.5rem 1rem;
+  background-color: $White;
+}
+
+.Review_Top {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+
+  > h6 {
+    font-weight: 400;
+    font-size: 1.1rem;
+  }
+}
+
+.Review_Bottom {
+  width: 500px;
+
+  > p {
+    font-weight: 400;
+    font-size: 1rem;
+  }
+}
+
+@media screen and (min-width: 769px) and (max-width: 1199px) {
+}
+
+@media screen and (max-width: 768px) {
+  .Review_Wrapper {
+    gap: 10px;
+  }
+  .Review_Top {
+    width: fit-content;
+    gap: 10px;
+
+    > h6 {
+      font-size: 0.8rem;
+    }
+  }
+
+  .Review_Bottom {
+    width: fit-content;
+
+    > p {
+      font-size: 0.8rem;
+    }
+  }
+}
