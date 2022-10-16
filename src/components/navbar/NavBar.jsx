@@ -3,7 +3,7 @@ import { Link } from "react-scroll";
 import { useNavigate } from "react-router-dom";
 import BurgerMenu from "../hamburger/BurgerMenu";
 import UseMediaQuery from "../mediaquery/UseMediaQuerry";
-import logo from "../../assets/images/Rigvigon Logo.png";
+import logo from "../../assets/images/mendx_images/MendxLogo.png";
 import "./NavBar.scss";
 
 const NavBar = () => {
