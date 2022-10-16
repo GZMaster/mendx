@@ -8,7 +8,7 @@ import SuccessfulNotification from "../../components/notification/SuccessfulNoti
 const Contact = () => {
   const [toSend, setToSend] = useState({
     from_name: "",
-    to_name: "Rigvidon",
+    to_name: "Mendx Integrated",
     message: "",
     reply_to: "retrodevstechnology@gmail.com",
     from_email: "",
@@ -93,8 +93,7 @@ const Contact = () => {
                   <span>Our Address</span>
                 </h3>
                 <h3 className="C_item-text">
-                  7th floor CBC Towers, No 11 Olubunmi Owa Street, Lekki Phase
-                  1, Lagos
+                  No 3, Nana Street, Benin City, Edo State.
                 </h3>
               </div>
             </div>
@@ -106,7 +105,7 @@ const Contact = () => {
                 <h3 className="C_item_title">
                   <span> Email Us</span>
                 </h3>
-                <h3 className="C_item-text">rigvidenergyltd@gmail.com.com</h3>
+                <h3 className="C_item-text">mendxintegrated@gmail.com.com</h3>
               </div>
             </div>
             <div className="C_item">
@@ -117,7 +116,7 @@ const Contact = () => {
                 <h3 className="C_item_title">
                   <span>Call Us</span>
                 </h3>
-                <h3 className="C_item-text">0909 610 0225</h3>
+                <h3 className="C_item-text">0901 882 3578</h3>
               </div>
             </div>
           </div>
