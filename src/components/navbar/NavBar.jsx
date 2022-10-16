@@ -19,7 +19,8 @@ const NavBar = () => {
   return (
     <div className="nav__component">
       <div className="nav__header">
-        <img className="logo" src={logo} alt="" />
+        {/* <img className="logo" src={logo} alt="" /> */}
+        <h1 className='companyName'>MENDX Integrated Resources</h1>
       </div>
 
       {isPageWide ? (

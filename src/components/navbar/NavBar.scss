@@ -19,12 +19,16 @@
 .nav__header {
   display: flex;
   align-items: center;
-  width: 20%;
+  width: 50%;
   margin-left: 3%;
 }
 
 .logo {
   width: 20%;
+}
+
+.companyName {
+  color: $Black;
 }
 
 .links__content {
