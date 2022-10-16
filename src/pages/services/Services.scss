@@ -163,7 +163,7 @@
   background: #cccccc;
 }
 .pagination span.active {
-  background: #00a654;
+  background: $Base-color;
 }
 .pagination span:before {
   content: "";
@@ -204,13 +204,13 @@
   border-style: none;
   height: 24px;
   outline: none;
-  background-color: $Black;
+  // background-color: $Black;
 }
 .S_Right_Button {
   border-style: none;
   height: 24px;
   outline: none;
-  background-color: $Black;
+  // background-color: $Black;
 }
 @media screen and (min-width: 769px) and (max-width: 1199px) {
   .S_Wrapper {
