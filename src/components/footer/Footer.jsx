@@ -5,14 +5,14 @@ const Footer = () => {
   return (
     <footer className="Footer">
       <div className="F_text">
-        <p>Copyright © 2022 Rigvidon Energy. All rights reserved.</p>
+        <p>Copyright © 2022 Mendx Integrated Limited. All rights reserved.</p>
         <p>
           Designed by <span className="F_Team">Retro Developers</span>
         </p>
       </div>
       <div className="F_Socials">
         <a
-          href="https://www.linkedin.com/company/rigvidon-energy/about/"
+          href="https://www.linkedin.com/company/"
           className="F_item"
           target={"_blank"}
           rel="noreferrer"

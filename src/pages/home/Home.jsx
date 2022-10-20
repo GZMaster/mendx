@@ -4,8 +4,8 @@ import { Link } from "react-scroll";
 import UseMediaQuery from "../../components/mediaquery/UseMediaQuerry";
 import { FiArrowDown } from "react-icons/fi";
 import "./Home.scss";
-import Hero from "../../assets/images/Compressed Hero Image.png";
-import Mobile from "../../assets/images/Mobile Compressed Hero Image.png";
+import Hero from "../../assets/images/mendx_images/mendxhero.jpg";
+import Mobile from "../../assets/images/mendx_images/mendxhero.jpg";
 
 const Home = () => {
   const navigate = useNavigate();

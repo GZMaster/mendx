@@ -8,18 +8,11 @@ const About = () => {
         <div className="A_Text_Wrap">
           <div className="A_Text_Title">WHO ARE WE</div>
           <h3 className="A_Text_Header">
-            <span>A WORLD CLASS </span>
-            <span className="A_Green">ENERGY COMPANY</span> SET TO ATTEND TO ALL
-            YOUR NEEDS
+            <span>Energy solutions for a </span>
+            <span className="A_Green">GREENER FUTURE</span>
           </h3>
           <p>
-            Rigvidon Energy is a global energy-based trading company that
-            specialises in both renewable and non-renewable energy. Some of our
-            services include; large scale solar panel installation and
-            maintenance, Engineering and automation solutions, oil and gas
-            drilling, Process engineering solutions and many more. We also
-            provide unique services perfectly tailored to our customers
-            requirements.
+            Mendex integrated resources is an energy based company that specializes in the production of renewable energy. We aim to provide reliable, more sustainable and eco-friendly energy systems. Our goal is to help our customers find alternatives to traditional energy sources to power their work and reduce greenhouse gas emissions. As they aim to achieve environmental and business sustainability while maintaining the highest levels of performance and productivity, we’re there—committed and ready to provide the solutions that address their energy and lifecycle value goals.
           </p>
         </div>
         <div className="A_Image_Wrap">
