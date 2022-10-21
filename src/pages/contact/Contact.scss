@@ -3,17 +3,40 @@
   width: 100%;
 }
 .C_Wrapper {
-  padding: 4rem 0rem;
-  padding-right: 4rem;
+  padding: 4rem 6rem;
   background-color: $background-offWhite;
 }
 .Contact_Wrapper {
   display: flex;
-  flex-direction: row-reverse;
+  flex-direction: row;
   justify-content: space-between;
-  gap: 1rem;
+  gap: 10rem;
   padding: 2rem 0;
   margin-top: 2rem;
+}
+.C_Text_Wrap {
+  flex: 1;
+  display: flex;
+  gap: 20px;
+  flex-direction: column;
+  justify-content: center;
+}
+.C_Text_Header {
+  font-weight: bold;
+  margin: 0;
+  font-size: 40px;
+  width: 70%;
+  line-height: 45px;
+}
+.C_Text_Title {
+  color: $Black-light;
+  line-height: 23.48px;
+  font-size: 20px;
+  font-weight: 500;
+  letter-spacing: 1.5px;
+}
+.C_Purple {
+  color: $Base-color;
 }
 .C_title {
   font-size: 1rem;
@@ -21,44 +44,57 @@
   letter-spacing: 3px;
   line-height: 1.5rem;
   text-transform: uppercase;
-  color: $Black;
+  color: $White;
   margin-top: 0;
+  padding-left: 0.75rem;
   margin-bottom: 1rem;
-  text-align: center;
+  text-align: left;
+}
+.C_Socials {
+  display: flex;
+  align-items: center;
+  gap: 3rem;
+  justify-content: center;
+}
+.C_Social svg {
+  stroke: $links;
+  font-size: 1.5rem;
+}
+.C_Social svg:hover {
+  transition: all 0.3s ease-in-out;
+  stroke: $Black;
 }
 .C_Form {
-  padding: 0.3rem 0rem;
-  flex: 1;
+  margin: 2rem 0;
+  margin-top: 0;
+  flex: 5.5;
   background-color: transparent;
   display: flex;
   flex-direction: column;
 }
 .C_Text {
   color: $Black;
-  text-align: center;
+  text-align: left;
   font-weight: 600;
-  width: 50%;
+  width: 65%;
   font-size: 2rem;
-  margin: auto;
   margin-bottom: 2rem;
 }
 .C_Info {
-  padding: 12rem 4rem;
-  background-repeat: no-repeat;
-  background-size: contain;
-  margin-right: 6rem;
-  flex: 1;
+  flex: 4.5;
+  padding: 2rem;
+  margin: auto;
   display: flex;
-  background-color: $background-offWhite;
+  background-color: $White;
   flex-direction: column;
-  gap: 10px;
-  justify-content: center;
-  align-content: center;
+  gap: 3rem;
+  justify-content: flex-start;
+  align-content: flex-start;
 }
 .C_btn {
   text-transform: capitalize;
-  background: $Base-color-light;
-  color: $Black;
+  background: $Contact-btn;
+  color: $White;
   padding: 1rem 1.5rem;
   letter-spacing: 2px;
   display: inline-block;
@@ -66,7 +102,7 @@
   font-size: 1.1rem;
   border: none;
   cursor: pointer;
-  width: fit-content;
+  width: 100%;
   margin-top: 1.2rem;
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
 }
@@ -78,9 +114,10 @@
   padding: 1rem 1rem;
   border: none;
   margin-bottom: 0.6rem;
-  background: transparent;
-  border: 1px solid $Base-color;
+  background: $White;
   text-transform: capitalize;
+  color: $Black;
+  font-family: "Manrope", sans-serif !important;
   letter-spacing: 1.5px;
 }
 .form_control:focus-within {
@@ -89,64 +126,74 @@
 .form_label {
   font-weight: 600;
   margin: 0.5rem 0;
+  color: $footer;
   text-transform: capitalize;
-  line-height: 1.5rem;
-  font-size: 1.1rem;
+  line-height: 1rem;
+  font-size: 0.8rem;
 }
 .C_item_title {
   color: $Black;
   margin: 0;
-  font-size: 18px;
+  font-size: 1rem;
   letter-spacing: 1.5px;
-  font-weight: 600;
-  line-height: 17px;
+  font-weight: 700;
+  line-height: 21px;
 }
 .C_Svg {
-  font-size: 45px;
-  padding: 1rem;
-  background-color: $Base-color;
+  font-size: 1.5rem;
+  display: flex;
+  width: fit-content;
+  background-color: transparent;
+}
+.C_Svg svg {
+  fill: $Svg-color;
 }
 
 .C_item-text {
-  font-size: 14px;
+  font-size: 1rem;
   margin: 0;
-  font-weight: 300;
+  color: $Black;
+  font-weight: 400;
+  width: fit-content;
 }
 
 .C_item {
   margin-right: 10px;
-  flex: 1;
+  font-family: "Manrope", sans-serif !important;
   display: flex;
-  background-color: $White;
-  border: 1px solid $Base-color;
+  gap: 0.5rem;
+  flex-direction: column;
+  background-color: transparent;
 }
 .C_item_Wrap {
   display: flex;
+  gap: 0.5rem;
   flex-direction: column;
-  padding: 0.75rem;
 }
 .C_item:nth-last-child(n) {
   margin-right: 0;
 }
 @media screen and (min-width: 769px) and (max-width: 1199px) {
   .C_Wrapper {
-    width: 95%;
-    padding-right: 3rem;
+    width: auto;
+    padding: 2rem;
   }
   .C_Text {
     width: 80%;
   }
   .C_Info {
-    margin-right: 1rem;
-    padding: 8rem 4rem;
+    align-content: flex-start;
+    padding-top: 4rem;
   }
-  .C_item-text {
-    font-size: 1rem;
+  .C_item {
+    width: auto;
   }
 }
 @media screen and (max-width: 768px) {
   .Contact_Wrapper {
     flex-direction: column-reverse;
+    margin: 0;
+    padding: 0;
   }
   .C_Text {
     width: 90%;
@@ -156,7 +203,7 @@
     text-align: left;
     justify-content: center;
     align-content: center;
-    padding: 4rem;
+    padding: 0;
     margin: 0;
     padding-right: 0;
     background-color: transparent;
@@ -173,13 +220,10 @@
     align-self: center;
     width: 100%;
     margin: 0;
-    font-size: 0.7rem;
+    font-size: 1rem;
     line-height: 22px;
   }
-  .C_Wrapper {
-    padding: 0;
-    width: 100%;
-  }
+
   .C_btn {
     width: fit-content !important;
     padding: 1rem 1.5rem;
@@ -198,22 +242,7 @@
     flex-direction: column;
     gap: 0;
   }
-  .C_Svg {
-    font-size: 45px;
-    padding: 1rem;
-    display: flex;
-    background-color: $Base-color;
-  }
-  .C_Svg svg {
-    align-self: center;
-  }
-
-  .form_control {
-    border: 1px solid $Base-color;
-  }
-  .C_btn {
-    background-color: $Base-color;
-    width: 100%;
-    margin-top: 0;
+  .C_Wrapper {
+    padding: 2rem 1rem;
   }
 }

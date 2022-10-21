@@ -9,8 +9,8 @@ const MainPage = () => {
     <div>
       <Home />
       {/* <About />
-      <Services />
-      <Contact /> */}
+      <Services /> */}
+      <Contact />
     </div>
   );
 };
