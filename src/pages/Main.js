@@ -8,8 +8,8 @@ const MainPage = () => {
   return (
     <div>
       <Home />
-      <About />
-      <Services />
+      {/* <About />
+      <Services /> */}
       <Contact />
     </div>
   );
