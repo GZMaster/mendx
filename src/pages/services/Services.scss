@@ -27,7 +27,7 @@
   .S_textHeader {
     margin: 0;
     padding: 0;
-    font-family: "Montserrat";
+    font-family: "Manrope", sans-serif;
     font-style: normal;
     font-weight: 400;
     font-size: 1rem;
@@ -39,7 +39,7 @@
   > h3 {
     margin: 0;
     padding: 0;
-    font-family: "Montserrat";
+    font-family: "Manrope", sans-serif;
     font-style: normal;
     font-weight: 600;
     font-size: 2rem;
@@ -54,7 +54,7 @@
   > p {
     margin: 0;
     padding: 2rem 0rem;
-    font-family: "Montserrat";
+    font-family: "Manrope", sans-serif;
     font-style: normal;
     font-weight: 400;
     font-size: 1rem;
@@ -71,7 +71,6 @@
   padding-left: 2.5rem;
   background-repeat: no-repeat;
   background-size: 4px;
-  background-image: url("../../assets/images/Electric Circuitvalues.png");
   background-position: left;
 
   > div {
@@ -100,7 +99,7 @@
     height: 100%;
 
     > h3 {
-      font-family: "Montserrat";
+      font-family: "Manrope", sans-serif;
       font-style: normal;
       font-weight: 600;
       font-size: 1rem;
@@ -111,7 +110,7 @@
     }
 
     > p {
-      font-family: "Montserrat";
+      font-family: "Manrope", sans-serif;
       font-style: normal;
       font-weight: 500;
       font-size: 0.8rem;

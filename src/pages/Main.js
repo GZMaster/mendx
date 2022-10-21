@@ -8,9 +8,9 @@ const MainPage = () => {
   return (
     <div>
       <Home />
-      <About />
+      {/* <About />
       <Services />
-      <Contact />
+      <Contact /> */}
     </div>
   );
 };

@@ -13,14 +13,25 @@ const NavBar = () => {
 
   const handleClick = (path) => {
     navigate("/");
-    setSelectPage(path)
-  }
+    setSelectPage(path);
+  };
+  const [colorChange, setColorChange] = useState(false);
+  const changeNavbarColor = () => {
+    if (window.scrollY >= 50) {
+      setColorChange(true);
+    } else {
+      setColorChange(false);
+    }
+  };
+  window.addEventListener("scroll", changeNavbarColor);
 
   return (
-    <div className="nav__component">
+    <nav
+      className={colorChange ? "nav__component colorChange" : "nav__component"}
+    >
       <div className="nav__header">
         {/* <img className="logo" src={logo} alt="" /> */}
-        <h1 className='companyName'>MENDX Integrated Resources</h1>
+        <h1 className="companyName">MENDX</h1>
       </div>
 
       {isPageWide ? (
@@ -46,14 +57,16 @@ const NavBar = () => {
             About Us
           </Link>
           <Link
-            className={selectPage === "What we do" ? "links selected" : "links"}
+            className={
+              selectPage === "Our Services" ? "links selected" : "links"
+            }
             smooth={true}
             spy={true}
             to="services"
             offset={-80}
-            onClick={() => handleClick("What we do")}
+            onClick={() => handleClick("Our Services")}
           >
-            What we do
+            Our Services
           </Link>
 
           <Link
@@ -74,7 +87,7 @@ const NavBar = () => {
       ) : (
         <BurgerMenu />
       )}
-    </div>
+    </nav>
   );
 };
 
