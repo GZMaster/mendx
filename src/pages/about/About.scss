@@ -1,138 +1,51 @@
 @import "../../Colors.scss";
-.A_Container {
-  height: auto;
-  background-color: $background-offWhite;
+.About_Container {
+  height: 200vh;
+  background-color: $bg-off;
 }
-.A_Wrapper {
+
+.About_Wrapper {
   padding: 4rem 0rem;
   display: flex;
-  gap: 90px;
+  gap: 10px;
   justify-content: space-evenly;
   margin: 0px 120px;
-  margin-right: 0px;
-}
-.A_Text_Wrap {
-  flex: 1;
-  display: flex;
-  gap: 30px;
-  flex-direction: column;
-  justify-content: center;
-}
-.A_Image_Wrap {
-  flex: 1;
-  padding: 4rem;
-  background-repeat: no-repeat;
-  background-size: contain;
-  background-position: right;
-  margin-right: 3rem;
-}
 
-.A_Text_Header {
-  font-weight: bold;
-  font-size: 40px;
-  margin: 0;
-  line-height: 45px;
-}
-.A_Btn {
-  border: 2px solid #00000063;
-  background-color: transparent;
-  padding: 0.5rem 2rem;
-  color: $Black;
-  font-weight: 500;
-  font-size: 16px;
-  width: fit-content;
-  text-decoration: none;
-}
-.A_Btn:hover {
-  color: $White;
-  transition: all 0.3s linear;
-  background-color: $Base-color;
-}
-.A_Image {
-  width: 70%;
-  padding-left: 4rem;
-  padding-bottom: 2rem;
-}
+  .About_Image_Wrap {
+    justify-content: flex-start;
 
-.A_Text_Title {
-  color: $Black-light;
-  line-height: 23.48px;
-  font-size: 20px;
-  font-weight: 300;
-  text-align: start;
-  letter-spacing: 2.5px;
-}
+    .About_Image {
+      display: block;
+      position: relative;
+      top: 0;
+      left: 0;
 
-.A_Green {
-  color: $Base-color;
-}
-.A_Text_Wrap p {
-  text-align: justify;
-  line-height: 22px;
-}
-@media screen and (min-width: 769px) and (max-width: 1199px) {
-  .A_Wrapper {
-    flex-direction: row;
-    padding: 2rem 1rem;
-    margin: 0;
-  }
-  .A_Image_Wrap {
-    margin-right: 1rem;
-    padding: 2rem;
-  }
-  .A_Image {
-    padding-top: 2rem;
-    padding-bottom: 0;
-    padding-left: 0;
-  }
-  .A_Image_Wrap img {
-    width: 100%;
-  }
-  .A_Text_Wrap p {
-    line-height: 22px;
-    font-size: 1rem;
-  }
-  .A_Text_Header {
-    line-height: 30px;
-    font-size: 1.5rem;
-  }
-  .A_Text_Title {
-    font-size: 1rem;
-    line-height: 1.2rem;
-  }
-}
+      .Image_Flag {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 549.62px;
+        height: 425.48px;
+      }
 
-@media screen and (max-width: 768px) {
-  .A_Wrapper {
-    flex-direction: column;
-    padding: 2rem 1rem;
-    margin: 0;
+      .Image_1 {
+        position: absolute;
+        z-index: 1;
+        width: 300px;
+        height: 136px;
+        left: 341px;
+        top: 388px;
+      }
+
+      .image_2 {
+        position: absolute;
+        z-index: 1;
+      }
+    }
   }
-  .A_Container {
-    height: auto;
+
+  .About_Image_Wrap img {
+    width: 48%;
   }
-  .A_Text_Wrap {
-    margin-bottom: 3rem;
-  }
-  .A_Image {
-    padding: 0;
-  }
-  .A_Image_Wrap {
-    justify-content: center;
-  }
-  .A_Image_Wrap img {
-    width: 100%;
-    margin-top: 0;
-  }
-  .A_Text_Title {
-    font-size: 14px;
-  }
-  .A_Text_Header {
-    line-height: 1.5;
-    font-size: 24px;
-  }
-  .A_Text_Wrap p {
-    line-height: 22px;
-    font-size: 1rem;
-  }
+
 }

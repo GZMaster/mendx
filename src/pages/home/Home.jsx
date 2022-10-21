@@ -1,16 +1,16 @@
 import React from "react";
-import { useNavigate } from "react-router-dom";
+// import { useNavigate } from "react-router-dom";
 import { Link } from "react-scroll";
-import UseMediaQuery from "../../components/mediaquery/UseMediaQuerry";
+// import UseMediaQuery from "../../components/mediaquery/UseMediaQuerry";
 import "./Home.scss";
 import Hero from "../../assets/images/Hero Image Mendx.png";
 
 const Home = () => {
-  const navigate = useNavigate();
-  let isPageWide = UseMediaQuery("(max-width: 468px)");
+  // const navigate = useNavigate();
+  // let isPageWide = UseMediaQuery("(max-width: 468px)");
 
   return (
-    <section id="about" className="H_Container">
+    <section id="home" className="H_Container">
       <div className="H_Wrapper">
         <div className="H_Text_Wrap">
           {/* <div className="H_Text_Title">
