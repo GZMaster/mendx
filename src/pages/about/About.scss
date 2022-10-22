@@ -9,41 +9,21 @@
 .About_Wrapper {
   padding: 4rem 0rem;
   display: flex;
-  gap: 10px;
-  justify-content: space-evenly;
+  gap: 80px;
+  justify-content: space-between;
   margin: 0px 120px;
 
   .About_Image_Wrap {
     justify-content: flex-start;
 
     .About_Image {
-      display: block;
-      position: relative;
-      top: 0;
-      left: 0;
-      width: 600px;
-      height: 500px;
+      width: 584.62px;
+      height: 425.48px;
 
-      .Image_Flag {
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 549.62px;
-        height: 425.48px;
-      }
-
-      .Image_1 {
-        position: absolute;
-        z-index: 1;
-        width: 300px;
-        height: 136px;
-        left: 341px;
-        top: 388px;
-      }
-
-      .image_2 {
-        position: absolute;
-        z-index: 1;
+      .Image {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
       }
     }
   }
@@ -53,7 +33,10 @@
   }
 
   .About_Text_Wrapper {
-
+    width: 48%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
 
     p {
       font-family: "Manrope", sans-serif;
@@ -65,12 +48,14 @@
     }
 
     .About_Text_Header {
-      font-family: "Manrope", sans-serif;
+      width: 472px;
+      height: 110px;
+      font-family: 'Manrope';
       font-style: normal;
-      font-weight: 600;
-      font-size: 36px;
-      line-height: 150%;
-      margin: 0px;
+      font-weight: 700;
+      font-size: 40px;
+      line-height: 55px;
+      color: #1A1A1A;
     }
 
     .About_List {
