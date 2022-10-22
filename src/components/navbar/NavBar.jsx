@@ -3,7 +3,7 @@ import { Link } from "react-scroll";
 import { useNavigate } from "react-router-dom";
 import BurgerMenu from "../hamburger/BurgerMenu";
 import UseMediaQuery from "../mediaquery/UseMediaQuerry";
-// import logo from "../../assets/images/mendx_images/MendxLogo.png";
+import logo from "../../assets/images/MendxLogo.png";
 import "./NavBar.scss";
 
 const NavBar = () => {
@@ -30,8 +30,7 @@ const NavBar = () => {
       className={colorChange ? "nav__component colorChange" : "nav__component"}
     >
       <div className="nav__header">
-        {/* <img className="logo" src={logo} alt="" /> */}
-        <h1 className="companyName">MENDX</h1>
+        <img className="logo" src={logo} alt="" />
       </div>
 
       {isPageWide ? (
