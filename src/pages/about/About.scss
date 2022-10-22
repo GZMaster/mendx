@@ -14,7 +14,7 @@
   margin: 0px 120px;
 
   .About_Image_Wrap {
-    justify-content: flex-start;
+    justify-content: center;
 
     .About_Image {
       width: 584.62px;
@@ -34,55 +34,89 @@
 
   .About_Text_Wrapper {
     width: 48%;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
+    gap: 16px;
 
-    p {
-      font-family: "Manrope", sans-serif;
-      font-style: normal;
-      font-weight: 300;
-      font-size: 18px;
-      line-height: 150%;
-      margin: 0px;
-    }
+    .About_Text_Heading {
 
-    .About_Text_Header {
-      width: 472px;
-      height: 110px;
-      font-family: 'Manrope';
-      font-style: normal;
-      font-weight: 700;
-      font-size: 40px;
-      line-height: 55px;
-      color: #1A1A1A;
-    }
-
-    .About_List {
-      font-family: "Manrope", sans-serif;
-      font-style: normal;
-      font-weight: 300;
-      font-size: 18px;
-      line-height: 150%;
-      margin: 0px;
-      list-style: none;
-      padding: 0px;
-
-      li {
+      p {
+        font-family: "Manrope", sans-serif;
+        font-style: normal;
+        font-weight: 300;
+        font-size: 1rem;
+        line-height: 150%;
+        margin: 0px;
+      }
+  
+      .About_Text_Header {
+        width: 472px;
+        height: 110px;
         font-family: 'Manrope';
-        font-style: normal; 
-        font-weight: 800;
-        font-size: 16px;
-        line-height: 140%;
-        padding: 10px
+        font-style: normal;
+        font-weight: 700;
+        font-size: 40px;
+        line-height: 55px;
+        color: #1A1A1A;
+        margin-top: 0px;
 
-        img {
-          width: 36px;
-          height: 36px;
-          background: rgba(165, 42, 42, 0.1);
+        span {
+          color: rgba(144, 29, 120, 1);
         }
       }
     }
+
+    .About_Text_Body {
+      gap: 32px;
+
+      p {
+        font-family: "Manrope", sans-serif;
+        font-style: normal;
+        font-weight: 300;
+        font-size: 1rem;
+        line-height: 150%;
+        margin: 0px;
+      }
+  
+      .About_List {
+        font-family: "Manrope", sans-serif;
+        font-style: normal;
+        font-weight: 300;
+        font-size: 18px;
+        line-height: 150%;
+        margin: 0px;
+        list-style: none;
+        padding: 0px;
+  
+        li {
+          display: flex;
+          flex-direction: row;
+          gap: 18px;
+          margin: 1rem;
+          padding: 0 13px;
+          font-family: 'Manrope';
+          font-style: normal; 
+          font-weight: 800;
+          font-size: 16px;
+          line-height: 140%;
+          padding: 10px;
+  
+          img {
+            width: 36px;
+            height: 36px;
+          }
+
+          p {
+            font-family: 'Manrope';
+            font-style: normal;
+            font-weight: 800;
+            font-size: 16px;
+            line-height: 140%;
+            color: #1A1A1A;
+          }
+        }
+      }
+
+    }
+
 
 
   }
