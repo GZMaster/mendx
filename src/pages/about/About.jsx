@@ -35,6 +35,21 @@ const About = () => {
           <h3 className="About_Text_Header">Nibh libero ornare pulvinar in metus.</h3>
 
           <p>Risus feugiat urna ut rhoncus. Euismod leo aliquam enim morbi tincidunt ultricies quam neque. Ultrices quisque viverra non nunc. Turpis sed ultrices habitant nibh arcu. Quis convallis sed.</p>
+
+          <ul className='About_List'>
+            <li>
+              <img src="" alt="" />
+              lorem
+            </li>
+            <li>
+              <img src="" alt="" />
+              lorem
+            </li>
+            <li>
+              <img src="" alt="" />
+              lorem
+            </li>
+          </ul>
         </div>
 
       </div>

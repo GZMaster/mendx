@@ -1,4 +1,6 @@
+@import url("https://fonts.googleapis.com/css?family=Manrope&display=swap");
 @import "../../Colors.scss";
+
 .About_Container {
   height: auto;
   background-color: $bg-off;
@@ -48,6 +50,56 @@
 
   .About_Image_Wrap img {
     width: 48%;
+  }
+
+  .About_Text_Wrapper {
+
+
+    p {
+      font-family: "Manrope", sans-serif;
+      font-style: normal;
+      font-weight: 300;
+      font-size: 18px;
+      line-height: 150%;
+      margin: 0px;
+    }
+
+    .About_Text_Header {
+      font-family: "Manrope", sans-serif;
+      font-style: normal;
+      font-weight: 600;
+      font-size: 36px;
+      line-height: 150%;
+      margin: 0px;
+    }
+
+    .About_List {
+      font-family: "Manrope", sans-serif;
+      font-style: normal;
+      font-weight: 300;
+      font-size: 18px;
+      line-height: 150%;
+      margin: 0px;
+      list-style: none;
+      padding: 0px;
+
+      li {
+        font-family: 'Manrope';
+        font-style: normal; 
+        font-weight: 800;
+        font-size: 16px;
+        line-height: 140%;
+        padding: 10px
+
+        img {
+          width: 36px;
+          height: 36px;
+          background: rgba(165, 42, 42, 0.1);
+        }
+      }
+    }
+
+
   }
 
 }
