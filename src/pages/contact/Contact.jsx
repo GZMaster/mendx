@@ -7,7 +7,7 @@ import {
   MdOutlinePhoneInTalk,
   MdOutlineLocationOn,
 } from "react-icons/md";
-import { FiFacebook, FiTwitter, FiInstagram } from "react-icons/fi";
+import { FiLinkedin } from "react-icons/fi";
 import SuccessfulNotification from "../../components/notification/SuccessfulNotification";
 
 const Contact = () => {
@@ -135,23 +135,7 @@ const Contact = () => {
                   target={"_blank"}
                   rel="noreferrer"
                 >
-                  <FiFacebook />
-                </a>
-                <a
-                  href="https://www.linkedin.com/company/bralewood-investment-limited/"
-                  className="C_Social"
-                  target={"_blank"}
-                  rel="noreferrer"
-                >
-                  <FiTwitter />
-                </a>
-                <a
-                  href="https://www.linkedin.com/company/bralewood-investment-limited/"
-                  className="C_Social"
-                  target={"_blank"}
-                  rel="noreferrer"
-                >
-                  <FiInstagram />
+                  <FiLinkedin />
                 </a>
               </div>
             </div>

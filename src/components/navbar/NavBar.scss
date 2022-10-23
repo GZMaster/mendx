@@ -59,7 +59,14 @@ a:hover {
   color: $Black;
 }
 
-
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+  .nav__header {
+    width: auto;
+  }
+  .nav__component {
+    padding: 20px;
+  }
+}
 @media screen and (max-width: 768px) {
   .nav__component {
     padding: 1rem 0.5rem;
