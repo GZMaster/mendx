@@ -1,6 +1,6 @@
 @import "../../Colors.scss";
 .Footer {
-  background-color: $Black;
+  background-color: $footer;
   width: 100%;
   height: 15%;
   padding: 0.5rem 0;
@@ -11,7 +11,7 @@
 }
 .F_text {
   font-weight: 300;
-  color: #ffffff8a;
+  color: $White;
   display: flex;
   flex-direction: column;
   line-height: 1.5;

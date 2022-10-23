@@ -1,139 +1,321 @@
+@import url("https://fonts.googleapis.com/css?family=Manrope&display=swap");
 @import "../../Colors.scss";
-.A_Container {
+
+.About_Container {
   height: auto;
-  background-color: $background-offWhite;
+  background-color: $bg-off;
 }
-.A_Wrapper {
+
+.About_Wrapper {
   padding: 4rem 0rem;
   display: flex;
-  gap: 90px;
-  justify-content: space-evenly;
+  gap: 80px;
+  justify-content: space-between;
   margin: 0px 120px;
-  margin-right: 0px;
-}
-.A_Text_Wrap {
-  flex: 1;
-  display: flex;
-  gap: 30px;
-  flex-direction: column;
-  justify-content: center;
-}
-.A_Image_Wrap {
-  flex: 1;
-  padding: 4rem;
-  background-repeat: no-repeat;
-  background-size: contain;
-  background-image: url("../../assets/images/Electric Circuit BG Design.png");
-  background-position: right;
-  margin-right: 3rem;
+
+  .About_Image_Wrap {
+    justify-content: center;
+
+    .About_Image {
+      width: 584.62px;
+      height: 425.48px;
+
+      .Image {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+    }
+  }
+
+  .About_Image_Wrap img {
+    width: 48%;
+  }
+
+  .About_Text_Wrapper {
+    width: 48%;
+    gap: 16px;
+
+    .About_Text_Heading {
+
+      p {
+        width: 472px;
+        height: 22px;
+        font-family: 'Manrope';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 140%;
+        letter-spacing: 0.08em;
+        text-transform: uppercase;
+        color: #333333;
+      }
+  
+      .About_Text_Header {
+        width: 472px;
+        height: 110px;
+        font-family: 'Manrope';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 40px;
+        line-height: 55px;
+        color: #1A1A1A;
+        margin-top: 0px;
+
+        span {
+          color: rgba(144, 29, 120, 1);
+        }
+      }
+    }
+
+    .About_Text_Body {
+      gap: 32px;
+
+      p {
+        width: 472px;
+        height: 66px;
+        font-family: "Manrope", sans-serif;
+        font-style: normal;
+        font-weight: 300;
+        font-size: 1rem;
+        line-height: 150%;
+        margin: 0px;
+      }
+  
+      .About_List {
+        margin: 0px;
+        list-style: none;
+        padding: 0px;
+  
+        li {
+          display: flex;
+          flex-direction: row;
+          gap: 18px;
+          margin: 1rem;
+          padding: 0 13px;
+  
+          img {
+            width: 36px;
+            height: 36px;
+          }
+
+          p {
+            width: 322px;
+            height: 22px;
+            font-family: 'Manrope';
+            font-style: normal;
+            font-weight: 800;
+            font-size: 16px;
+            line-height: 140%;
+            color: #1A1A1A;
+          }
+        }
+      }
+
+    }
+
+
+
+  }
+
 }
 
-.A_Text_Header {
-  font-weight: bold;
-  font-size: 40px;
-  margin: 0;
-  line-height: 45px;
-}
-.A_Btn {
-  border: 2px solid #00000063;
-  background-color: transparent;
-  padding: 0.5rem 2rem;
-  color: $Black;
-  font-weight: 500;
-  font-size: 16px;
-  width: fit-content;
-  text-decoration: none;
-}
-.A_Btn:hover {
-  color: $White;
-  transition: all 0.3s linear;
-  background-color: $Base-color;
-}
-.A_Image {
-  width: 70%;
-  padding-left: 4rem;
-  padding-bottom: 2rem;
-}
-
-.A_Text_Title {
-  color: $Black-light;
-  line-height: 23.48px;
-  font-size: 20px;
-  font-weight: 300;
-  text-align: start;
-  letter-spacing: 2.5px;
-}
-
-.A_Green {
-  color: $Base-color;
-}
-.A_Text_Wrap p {
-  text-align: justify;
-  line-height: 22px;
-}
 @media screen and (min-width: 769px) and (max-width: 1199px) {
-  .A_Wrapper {
+  .About_Wrapper {
     flex-direction: row;
-    padding: 2rem 1rem;
+    padding: 1rem 1rem;
     margin: 0;
-  }
-  .A_Image_Wrap {
-    margin-right: 1rem;
-    padding: 2rem;
-  }
-  .A_Image {
-    padding-top: 2rem;
-    padding-bottom: 0;
-    padding-left: 0;
-  }
-  .A_Image_Wrap img {
-    width: 100%;
-  }
-  .A_Text_Wrap p {
-    line-height: 22px;
-    font-size: 1rem;
-  }
-  .A_Text_Header {
-    line-height: 30px;
-    font-size: 1.5rem;
-  }
-  .A_Text_Title {
-    font-size: 1rem;
-    line-height: 1.2rem;
+
+    .About_Image_Wrap {
+
+      .About_Image {
+        width: 100%;
+        height: auto;
+      }
+    }
+
+    .About_Text_Wrapper {
+      width: 48%;
+  
+      .About_Text_Heading {
+  
+        p {
+          width: 100%;
+          height: auto;
+          font-weight: 400;
+          font-size: 0.8rem;
+          line-height: 140%;
+          letter-spacing: 0.08em;
+          text-transform: uppercase;
+          color: #333333;
+          margin: 0px;
+        }
+    
+        .About_Text_Header {
+          width: 100%;
+          height: auto;
+          font-family: 'Manrope';
+          font-style: normal;
+          font-weight: 700;
+          font-size: 27px;
+          line-height: 37px;
+          color: #1A1A1A;
+          margin-top: 0px;
+  
+          span {
+            color: rgba(144, 29, 120, 1);
+          }
+        }
+      }
+  
+      .About_Text_Body {
+        gap: 32px;
+
+  
+        p {
+          width: 100%;
+          height: auto;
+          font-family: 'Manrope';
+          font-style: normal;
+          font-weight: 400;
+          font-size: 1rem;
+          line-height: 140%;
+          color: #333333;
+          margin: 0px;
+        }
+    
+        .About_List {
+          width: 100%;
+          height: auto;
+          margin: 0px;
+          list-style: none;
+          padding: 0px;
+    
+          li {
+            display: flex;
+            flex-direction: row;
+            gap: 18px;
+            margin: 1rem;
+            padding: 0 13px;
+    
+            img {
+              width: 36px;
+              height: 36px;
+            }
+  
+            p {
+              width: 100%;
+              height: auto;
+              font-family: 'Manrope';
+              font-style: normal;
+              font-weight: 800;
+              font-size: 1rem;
+              line-height: 140%;
+              color: #1A1A1A;
+            }
+          }
+        }
+      }
+    }
   }
 }
 
 @media screen and (max-width: 768px) {
-  .A_Wrapper {
-    flex-direction: column;
-    padding: 2rem 1rem;
+  .About_Wrapper {
+    flex-direction: column-reverse;
+    padding: 1rem 1rem;
     margin: 0;
-  }
-  .A_Container {
-    height: auto;
-  }
-  .A_Text_Wrap {
-    margin-bottom: 3rem;
-  }
-  .A_Image {
-    padding: 0;
-  }
-  .A_Image_Wrap {
-    justify-content: center;
-  }
-  .A_Image_Wrap img {
-    width: 100%;
-    margin-top: 0;
-  }
-  .A_Text_Title {
-    font-size: 14px;
-  }
-  .A_Text_Header {
-    line-height: 1.5;
-    font-size: 24px;
-  }
-  .A_Text_Wrap p {
-    line-height: 22px;
-    font-size: 1rem;
+
+    .About_Image_Wrap {
+
+      .About_Image {
+        width: 100%;
+        height: auto;
+      }
+    }
+
+    .About_Text_Wrapper {
+      width: 100%;
+  
+      .About_Text_Heading {
+  
+        p {
+          width: 100%;
+          height: auto;
+          font-weight: 400;
+          font-size: 0.8rem;
+          line-height: 140%;
+          letter-spacing: 0.08em;
+          text-transform: uppercase;
+          color: #333333;
+          margin: 0px;
+        }
+    
+        .About_Text_Header {
+          width: 100%;
+          height: auto;
+          font-family: 'Manrope';
+          font-style: normal;
+          font-weight: 700;
+          font-size: 27px;
+          line-height: 37px;
+          color: #1A1A1A;
+          margin-top: 0px;
+  
+          span {
+            color: rgba(144, 29, 120, 1);
+          }
+        }
+      }
+  
+      .About_Text_Body {
+        gap: 32px;
+
+  
+        p {
+          width: 100%;
+          height: auto;
+          font-family: 'Manrope';
+          font-style: normal;
+          font-weight: 400;
+          font-size: 1rem;
+          line-height: 140%;
+          color: #333333;
+          margin: 0px;
+        }
+    
+        .About_List {
+          width: 100%;
+          height: auto;
+          margin: 0px;
+          list-style: none;
+          padding: 0px;
+    
+          li {
+            display: flex;
+            flex-direction: row;
+            gap: 18px;
+            margin: 1rem;
+            padding: 0 13px;
+    
+            img {
+              width: 36px;
+              height: 36px;
+            }
+  
+            p {
+              width: 100%;
+              height: auto;
+              font-family: 'Manrope';
+              font-style: normal;
+              font-weight: 800;
+              font-size: 1rem;
+              line-height: 140%;
+              color: #1A1A1A;
+            }
+          }
+        }
+      }
+    }
   }
 }
