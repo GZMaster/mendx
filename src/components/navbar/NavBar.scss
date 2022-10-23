@@ -24,12 +24,8 @@
 .nav__header {
   display: flex;
   align-items: center;
-  width: 50%;
+  width: 40%;
   margin-left: 3%;
-}
-
-.logo {
-  width: 20%;
 }
 
 .companyName {
@@ -63,12 +59,15 @@ a:hover {
   color: $Black;
 }
 
+
 @media screen and (max-width: 768px) {
-  .logo {
-    width: 50%;
-  }
   .nav__component {
-    width: 100%;
-    width: -webkit-fill-available;
+    padding: 1rem 0.5rem;
+  }
+  .nav__header {
+    display: flex;
+    align-items: center;
+    width: 60%;
+    margin-left: 3%;
   }
 }

@@ -39,12 +39,16 @@
     .About_Text_Heading {
 
       p {
-        font-family: "Manrope", sans-serif;
+        width: 472px;
+        height: 22px;
+        font-family: 'Manrope';
         font-style: normal;
-        font-weight: 300;
-        font-size: 1rem;
-        line-height: 150%;
-        margin: 0px;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 140%;
+        letter-spacing: 0.08em;
+        text-transform: uppercase;
+        color: #333333;
       }
   
       .About_Text_Header {
@@ -68,6 +72,8 @@
       gap: 32px;
 
       p {
+        width: 472px;
+        height: 66px;
         font-family: "Manrope", sans-serif;
         font-style: normal;
         font-weight: 300;
@@ -77,11 +83,6 @@
       }
   
       .About_List {
-        font-family: "Manrope", sans-serif;
-        font-style: normal;
-        font-weight: 300;
-        font-size: 18px;
-        line-height: 150%;
         margin: 0px;
         list-style: none;
         padding: 0px;
@@ -92,12 +93,6 @@
           gap: 18px;
           margin: 1rem;
           padding: 0 13px;
-          font-family: 'Manrope';
-          font-style: normal; 
-          font-weight: 800;
-          font-size: 16px;
-          line-height: 140%;
-          padding: 10px;
   
           img {
             width: 36px;
@@ -105,6 +100,8 @@
           }
 
           p {
+            width: 322px;
+            height: 22px;
             font-family: 'Manrope';
             font-style: normal;
             font-weight: 800;
@@ -121,4 +118,204 @@
 
   }
 
+}
+
+@media screen and (min-width: 769px) and (max-width: 1199px) {
+  .About_Wrapper {
+    flex-direction: row;
+    padding: 1rem 1rem;
+    margin: 0;
+
+    .About_Image_Wrap {
+
+      .About_Image {
+        width: 100%;
+        height: auto;
+      }
+    }
+
+    .About_Text_Wrapper {
+      width: 48%;
+  
+      .About_Text_Heading {
+  
+        p {
+          width: 100%;
+          height: auto;
+          font-weight: 400;
+          font-size: 0.8rem;
+          line-height: 140%;
+          letter-spacing: 0.08em;
+          text-transform: uppercase;
+          color: #333333;
+          margin: 0px;
+        }
+    
+        .About_Text_Header {
+          width: 100%;
+          height: auto;
+          font-family: 'Manrope';
+          font-style: normal;
+          font-weight: 700;
+          font-size: 27px;
+          line-height: 37px;
+          color: #1A1A1A;
+          margin-top: 0px;
+  
+          span {
+            color: rgba(144, 29, 120, 1);
+          }
+        }
+      }
+  
+      .About_Text_Body {
+        gap: 32px;
+
+  
+        p {
+          width: 100%;
+          height: auto;
+          font-family: 'Manrope';
+          font-style: normal;
+          font-weight: 400;
+          font-size: 1rem;
+          line-height: 140%;
+          color: #333333;
+          margin: 0px;
+        }
+    
+        .About_List {
+          width: 100%;
+          height: auto;
+          margin: 0px;
+          list-style: none;
+          padding: 0px;
+    
+          li {
+            display: flex;
+            flex-direction: row;
+            gap: 18px;
+            margin: 1rem;
+            padding: 0 13px;
+    
+            img {
+              width: 36px;
+              height: 36px;
+            }
+  
+            p {
+              width: 100%;
+              height: auto;
+              font-family: 'Manrope';
+              font-style: normal;
+              font-weight: 800;
+              font-size: 1rem;
+              line-height: 140%;
+              color: #1A1A1A;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .About_Wrapper {
+    flex-direction: column-reverse;
+    padding: 1rem 1rem;
+    margin: 0;
+
+    .About_Image_Wrap {
+
+      .About_Image {
+        width: 100%;
+        height: auto;
+      }
+    }
+
+    .About_Text_Wrapper {
+      width: 100%;
+  
+      .About_Text_Heading {
+  
+        p {
+          width: 100%;
+          height: auto;
+          font-weight: 400;
+          font-size: 0.8rem;
+          line-height: 140%;
+          letter-spacing: 0.08em;
+          text-transform: uppercase;
+          color: #333333;
+          margin: 0px;
+        }
+    
+        .About_Text_Header {
+          width: 100%;
+          height: auto;
+          font-family: 'Manrope';
+          font-style: normal;
+          font-weight: 700;
+          font-size: 27px;
+          line-height: 37px;
+          color: #1A1A1A;
+          margin-top: 0px;
+  
+          span {
+            color: rgba(144, 29, 120, 1);
+          }
+        }
+      }
+  
+      .About_Text_Body {
+        gap: 32px;
+
+  
+        p {
+          width: 100%;
+          height: auto;
+          font-family: 'Manrope';
+          font-style: normal;
+          font-weight: 400;
+          font-size: 1rem;
+          line-height: 140%;
+          color: #333333;
+          margin: 0px;
+        }
+    
+        .About_List {
+          width: 100%;
+          height: auto;
+          margin: 0px;
+          list-style: none;
+          padding: 0px;
+    
+          li {
+            display: flex;
+            flex-direction: row;
+            gap: 18px;
+            margin: 1rem;
+            padding: 0 13px;
+    
+            img {
+              width: 36px;
+              height: 36px;
+            }
+  
+            p {
+              width: 100%;
+              height: auto;
+              font-family: 'Manrope';
+              font-style: normal;
+              font-weight: 800;
+              font-size: 1rem;
+              line-height: 140%;
+              color: #1A1A1A;
+            }
+          }
+        }
+      }
+    }
+  }
 }
