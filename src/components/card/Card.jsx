@@ -10,7 +10,7 @@ const Card = ({ items, cardClassWrapper, cardClass }) => {
         return (
           <article className={cardClass ? cardClass : "Card"} key={id}>
             <div className="Card_Image">
-              <img src={image} alt={title} />
+              {image ? <img src={image} alt={title} /> : null}
             </div>
             <div className="Card_Details">
               <h6>{title}</h6>
