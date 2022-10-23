@@ -127,6 +127,10 @@
     margin: 0;
 
     .About_Image_Wrap {
+      align-items: center;
+      justify-content: center;
+      display: flex;
+      width: 48%;
 
       .About_Image {
         width: 100%;
@@ -135,7 +139,7 @@
     }
 
     .About_Text_Wrapper {
-      width: 48%;
+      width: 80%;
   
       .About_Text_Heading {
   
