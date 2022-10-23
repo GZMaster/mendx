@@ -17,7 +17,7 @@ const NavBar = () => {
   };
   const [colorChange, setColorChange] = useState(false);
   const changeNavbarColor = () => {
-    if (window.scrollY >= 50) {
+    if (window.scrollY >= 50 || !isPageWide) {
       setColorChange(true);
     } else {
       setColorChange(false);

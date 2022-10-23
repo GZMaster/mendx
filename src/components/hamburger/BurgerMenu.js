@@ -19,7 +19,7 @@ const BurgerMenu = () => {
         toggle={setOpen}
         direction="right"
         duration={0.8}
-        color="#fff"
+        color="#901D78"
       />
 
       <div className={`panel ${isOpen ? "open" : "close"}`}>
