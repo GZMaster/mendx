@@ -7,24 +7,25 @@
   top: 0%;
   height: 30px;
   justify-content: space-between;
-  padding: 20px;
+  padding: 20px 55px;
   align-items: center;
-  background-color: $Base-color;
-  box-shadow: 0 1px 0 rgb(0 0 0 / 10%);
+  background-color: transparent;
+
   font-weight: 500;
   line-height: 23px;
-  font-family: "Montserrat";
+  transition: all 0.3s ease-in-out;
+  font-family: "Manrope", sans-serif;
+}
+.colorChange {
+  background-color: $bg-off;
+  box-shadow: 0 1px 0 rgb(0 0 0 / 10%);
 }
 
 .nav__header {
   display: flex;
   align-items: center;
-  width: 50%;
+  width: 40%;
   margin-left: 3%;
-}
-
-.logo {
-  width: 20%;
 }
 
 .companyName {
@@ -48,7 +49,9 @@
   font-weight: bold;
 }
 .Contact-Link {
-  border: 1px solid $Black;
+  border: 1px solid $Contact-btn;
+  background-color: $Contact-btn;
+  color: $White;
   padding: 7px 13px;
 }
 
@@ -56,12 +59,15 @@ a:hover {
   color: $Black;
 }
 
+
 @media screen and (max-width: 768px) {
-  .logo {
-    width: 50%;
-  }
   .nav__component {
-    width: 100%;
-    width: -webkit-fill-available;
+    padding: 1rem 0.5rem;
+  }
+  .nav__header {
+    display: flex;
+    align-items: center;
+    width: 60%;
+    margin-left: 3%;
   }
 }

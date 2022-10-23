@@ -1,79 +1,123 @@
 @import "../../Colors.scss";
-.Home_Page {
-  position: relative;
+.H_Container {
+  height: auto;
+  background-color: $background-offWhite;
 }
-.hero_image {
-  position: relative;
-  object-fit: contain;
-  width: -webkit-fill-available;
-}
-
-.Home_btn {
-  text-transform: capitalize;
-  color: $Black;
-  padding: 1rem 1.5rem;
-  letter-spacing: 2px;
-  display: inline-block;
-  font-weight: 700;
-  font-size: 1.1rem;
-  border: none;
-  cursor: pointer;
-  margin: auto;
-  background-color: $Base-color-light;
-}
-.Home_Svg {
-  padding: 1rem;
-  color: $Base-color;
-  background-color: $Black;
+.H_Wrapper {
+  padding: 4rem 0rem;
   display: flex;
+  gap: 10px;
+  justify-content: space-evenly;
+  margin: 0px 120px;
 }
-.Home_Svg svg {
-  align-self: center;
+.H_Text_Wrap {
+  flex: 1;
+  display: flex;
+  gap: 20px;
+  flex-direction: column;
+  justify-content: center;
+}
+.H_Image_Wrap {
+  flex: 1;
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  background-image: url("../../assets/images/3 Frame Image Mendx.png");
+  margin-left: 5rem;
+  background-position: center;
+  background-repeat: no-repeat;
+  justify-content: flex-end;
+}
+.H_Text_Header {
+  font-weight: bold;
+  margin: 0;
+  font-size: 40px;
+  line-height: 45px;
+}
+.H_Btn {
+  background-color: $Contact-btn;
+  padding: 0.5rem 2rem;
+  color: $White;
+  font-weight: 500;
+  font-size: 16px;
+  width: fit-content;
+  text-decoration: none;
+}
+.H_Btn:hover {
+  color: $White;
+  transition: all 0.3s linear;
+  background-color: $Contact-btn;
+}
+.H_Text_Title {
+  color: $Black-light;
+  line-height: 23.48px;
   font-size: 20px;
+  font-weight: 500;
+  letter-spacing: 1.5px;
 }
-
-.Home_svg_btn {
-  cursor: pointer;
+.H_Orange {
+  color: #f96507;
 }
-
-.Home_svg_btn:hover {
-  color: $Base-color;
+.H_Blue {
+  color: #000098;
 }
-
-.Home_Wrapper {
-  bottom: 5vh;
-  display: flex;
-  left: 40vw;
-  position: absolute;
+.H_Text_Wrap p {
+  text-align: justify;
+  line-height: 22px;
 }
-.Home_btn:hover {
-  background-color: $Base-color;
+.H_Image {
+  position: relative;
 }
-@media screen and (min-width: 469px) and (max-width: 1199px) {
-  .Home_Svg {
-    display: none;
+.H_Image::before {
+  background-image: url("../../assets/images/3 Frame Image Mendx.png");
+}
+@media screen and (min-width: 769px) and (max-width: 1199px) {
+  .H_Wrapper {
+    flex-direction: row;
+    padding: 2rem 1rem;
+    margin: 0;
   }
-  .Home_btn {
-    font-size: 0.9rem;
-    padding: 0.75rem 1rem;
+  .H_Image_Wrap img {
+    width: 48%;
   }
-  .Home_Wrapper {
-    bottom: 3vh;
-  }
-}
-@media screen and (max-width: 468px) {
-  .Home_Page {
-    position: relative;
-  }
-  .Home_Wrapper {
-    position: absolute;
-    bottom: 2vh;
-    left: 25vw;
-  }
-  .Home_Svg svg {
+  .H_Text_Wrap p {
+    line-height: 22px;
     font-size: 1rem;
   }
-  .Home_btn {
-    font-size: 0.85rem;
+  .H_Text_Header {
+    line-height: 32px;
+    font-size: 2.2rem;
+  }
+}
+@media screen and (max-width: 768px) {
+  .H_Wrapper {
+    flex-direction: column;
+    padding: 2rem 1rem;
+    margin: 0;
+    margin-top: 4rem;
+  }
+  .H_Container {
+    height: auto;
+  }
+  .H_Text_Wrap {
+    margin-bottom: 3rem;
+  }
+  .H_Image_Wrap {
+    justify-content: center;
+    margin: 0;
+  }
+  .H_Image_Wrap img {
+    width: 48%;
+  }
+  .H_Text_Title {
+    font-size: 14px;
+  }
+  .H_Text_Header {
+    line-height: 1.5;
+    font-size: 24px;
+  }
+  .H_Text_Wrap p {
+    line-height: 22px;
+    font-size: 1rem;
   }
 }

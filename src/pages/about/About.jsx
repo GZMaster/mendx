@@ -1,23 +1,63 @@
 import React from "react";
+import UseMediaQuery from "../../components/mediaquery/UseMediaQuerry";
 import "./About.scss";
-import One from "../../assets/images/Person.png";
+import AboutImage from "../../assets/images/Images Plus Map_About.png";
+import AboutImageMobile from "../../assets/images/Images plus map Mobile_About_Mobile.png";
+import icon1 from "../../assets/images/Thumbs up_AboutIcon.png";
+import icon2 from "../../assets/images/Eye_AboutIcon.png";
+import icon3 from "../../assets/images/Badge_AboutIcon.png";
+
 const About = () => {
+  let isPageWide = UseMediaQuery("(max-width: 468px)");
+
   return (
-    <section id="about" className="A_Container">
-      <div className="A_Wrapper">
-        <div className="A_Text_Wrap">
-          <div className="A_Text_Title">WHO ARE WE</div>
-          <h3 className="A_Text_Header">
-            <span>Energy solutions for a </span>
-            <span className="A_Green">GREENER FUTURE</span>
-          </h3>
-          <p>
-            Mendex integrated resources is an energy based company that specializes in the production of renewable energy. We aim to provide reliable, more sustainable and eco-friendly energy systems. Our goal is to help our customers find alternatives to traditional energy sources to power their work and reduce greenhouse gas emissions. As they aim to achieve environmental and business sustainability while maintaining the highest levels of performance and productivity, we’re there—committed and ready to provide the solutions that address their energy and lifecycle value goals.
-          </p>
+    <section id="about" className="About_Container">
+      <div className="About_Wrapper">
+        <div className="About_Image_Wrap">
+          {!isPageWide ? (
+            <div className="About_Image">
+              <img src={AboutImage} className="Image" alt="" />
+            </div>
+          ) : (
+            <div className="About_Image">
+              <img src={AboutImageMobile} className="Image" alt="" />
+            </div>
+          ) }
         </div>
-        <div className="A_Image_Wrap">
-          <img src={One} className="A_Image" alt={One} />
+        <div className="About_Text_Wrapper">
+          <div className="About_Text_Heading">
+            <p>Get to know us more</p>
+            <h3 className="About_Text_Header">Benefits of <span>Partnering with</span> us.</h3>
+          </div>
+
+          <div className="About_Text_Body">
+
+            <p>Our goal is to help our customers find alternatives to traditional energy sources to power their systems with and help them reduce their contribution to earth’s greenhouse gas emissions. </p>
+
+            <ul className='About_List'>
+              <li>
+                <img src={icon1} alt="" />
+                <p>
+                  We ensure 100% transparency
+                </p>
+                 
+              </li>
+              <li>
+                <img src={icon2} alt="" />
+                <p>
+                  We are equipped with a team of highly efficient and experienced personnels
+                </p>
+              </li>
+              <li>
+                <img src={icon3} alt="" />
+                <p>
+                  High level of precision in the execution of our services
+                </p>
+              </li>
+            </ul>
+          </div>
         </div>
+
       </div>
     </section>
   );

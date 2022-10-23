@@ -1,7 +1,6 @@
 import React from "react";
 import PropTypes from "prop-types";
 import "./Card.scss";
-import BlackImage from "../../assets/images/Service Mask group.png";
 
 const Card = ({ items, cardClassWrapper, cardClass }) => {
   return (
@@ -11,11 +10,7 @@ const Card = ({ items, cardClassWrapper, cardClass }) => {
         return (
           <article className={cardClass ? cardClass : "Card"} key={id}>
             <div className="Card_Image">
-              {image ? (
-                <img src={image} alt={title} />
-              ) : (
-                <img src={BlackImage} alt={"Black"} />
-              )}
+              <img src={image} alt={title} />
             </div>
             <div className="Card_Details">
               <h6>{title}</h6>
