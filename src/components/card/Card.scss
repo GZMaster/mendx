@@ -46,11 +46,12 @@
 }
 .Card_Details {
   position: absolute;
-  width: 270px;
+  width: 80%;
   height: auto;
   padding: 0.5rem;
   bottom: 10%;
-  left: 6%;
+  left: 50%;
+  transform: translate(-50%, 0);
   background-color: $White;
   display: flex;
   flex-direction: column;
@@ -90,7 +91,6 @@
     margin-bottom: 30px;
   }
   .Card_Details {
-    left: 8%;
     padding: 1rem;
   }
   .Card_Image {
