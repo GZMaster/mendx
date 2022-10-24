@@ -9,7 +9,7 @@ import "./NavBar.scss";
 const NavBar = () => {
   const navigate = useNavigate();
   const [selectPage, setSelectPage] = useState("Home");
-  let isPageWide = UseMediaQuery("(min-width: 768px)");
+  let isPageWide = UseMediaQuery("(min-width: 769px)");
 
   const handleClick = (path) => {
     navigate("/");
