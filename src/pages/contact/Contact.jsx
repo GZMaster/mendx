@@ -130,7 +130,7 @@ const Contact = () => {
             <div className="C_item">
               <div className="C_Socials">
                 <a
-                  href="https://www.linkedin.com/company/bralewood-investment-limited/"
+                  href="https://www.linkedin.com/company/mendx-integrated-limited/about/"
                   className="C_Social"
                   target={"_blank"}
                   rel="noreferrer"
