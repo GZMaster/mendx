@@ -15,7 +15,7 @@ const Contact = () => {
     from_name: "",
     to_name: "Mendx Integrated",
     message: "",
-    reply_to: "retrodevstechnology@gmail.com",
+    reply_to: "mendxintegrated@gmail.com",
     from_email: "",
     subject: "",
   });
@@ -113,7 +113,7 @@ const Contact = () => {
                 <h3 className="C_item_title">
                   <span>Our Contact E-mail</span>
                 </h3>
-                <h3 className="C_item-text">mendxintegrated@gmail.com.com</h3>
+                <h3 className="C_item-text">mendxintegrated@gmail.com</h3>
               </div>
             </div>
             <div className="C_item">
